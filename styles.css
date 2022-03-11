@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(32, 12, 12);
+  border: black 2px solid;
+}
+
+.header {
+  text-align: center;
+  background-color: #591414;
+  border: #000000 2px solid;
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.3);
+}
+
+.header_title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.main_page {
+  overflow: auto;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  background: #4b0d0d;
+  box-shadow: 10px 10px 10px rgb(58, 49, 49);
+  border-radius: 20px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  color: white;
+  text-decoration: underline;
+}
+
+.question {
+  margin-bottom: 3em;
+  color: white;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10em;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.images {
+   height: 35px;
+}
+
+footer {
+  border: #000000 2px solid;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  background-color: #591414;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+  box-shadow: 0 3px 5px rgba(255, 255, 255, 0.3);
+}
+
+.bookmark_card {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  width: 50px;
+}
