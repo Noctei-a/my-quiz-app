@@ -4,10 +4,7 @@ html {
 }
 
 body {
-  height: 100vh;
-  max-width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0em auto 0em auto;
   font-family: "Times New Roman", Times, serif;
   background-color: rgb(41, 7, 7);
   border: black 1px solid;
@@ -16,7 +13,7 @@ body {
 .header {
   text-align: center;
   background-color: #591414;
-  border: #000000 1px solid;
+  padding: 0.25em;
 }
 
 .header_title {
@@ -27,21 +24,17 @@ body {
 }
 
 .main_page {
-  overflow: auto;
-  z-index: 0;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   margin: 2em auto;
-  width: 100%;
-  height: 100%;
   align-items: center;
-  align-content: flex-start;
 }
 
 .card {
   position: relative;
   width: 90%;
-  height: 200px;
+  height: fit-content;
   background: #4b0d0d;
   border-radius: 20px;
   margin-top: 1.5em;
@@ -49,22 +42,15 @@ body {
 }
 
 h2 {
-  margin-left: 0.5em;
+  text-align: center;
   color: white;
   text-decoration: underline;
 }
 
-.question {
-  margin-bottom: 3em;
-  color: white;
-  text-align: center;
-}
-
 form {
   display: flex;
-  gap: 10em;
   justify-content: center;
-  flex-direction: row;
+  padding-bottom: 2em;
 }
 
 .images {
@@ -72,17 +58,17 @@ form {
 }
 
 footer {
-display: flex;
-position: fixed;
-width: 100%;
-bottom: 0px;
-border: #000000 1px solid;
-align-items: center;
-font-family: "Times New Roman", Times, serif;
-font-size: larger;
-background-color: #591414;
-justify-content: space-around;
-z-index: 10;
+  display: flex;
+  position: sticky;
+  width: 100%;
+  bottom: 0px;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  background-color: #591414;
+  justify-content: space-around;
+  z-index: 10;
+  padding: 0.25em 0em;
 }
 
 .bookmark_card {
@@ -92,14 +78,95 @@ z-index: 10;
   width: 50px;
 }
 
-.button {
-  width: 8em;
-  margin: 1em;
-}
-
-.icontext{
+.icontext {
   text-decoration: none;
   text-align: center;
   color: white;
+}
 
+ul {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0em;
+  padding: 0em;
+}
+
+li {
+  margin: 1em;
+  background-color: rgb(41, 7, 7);
+  padding: 0.5em;
+  box-shadow: 1px 1px 2px rgb(255, 255, 255);
+  border-radius: 6px;
+}
+
+.button {
+  background-color: rgb(41, 7, 7);
+  padding: 1em;
+  box-shadow: 1px 1px 2px rgb(255, 255, 255);
+  border-radius: 6px;
+  border: none;
+  width: fit-content;
+  background-color: rgb(136, 17, 17);
+  color: white;
+}
+
+.question {
+  margin: 4em 1.5em;
+  color: white;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#newquestion {
+  margin: 2em;
+}
+
+.main_profile_page {
+  min-height: 100%;
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.profile_image {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  align-self: center;
+
+  color: white;
+  font-size: 1.5rem;
+}
+
+.profilePage {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.profilePage_text {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+#profilePageButton {
+  margin: 2em;
+}
+
+#profileTags {
+  background-color: #ffffff;
+  color: black;
 }
