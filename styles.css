@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   margin: 0em auto 0em auto;
   font-family: "Times New Roman", Times, serif;
   background-color: rgb(41, 7, 7);
@@ -59,7 +60,7 @@ form {
 
 footer {
   display: flex;
-  position: sticky;
+  position: fixed;
   width: 100%;
   bottom: 0px;
   align-items: center;
@@ -76,12 +77,6 @@ footer {
   top: -20px;
   right: 15px;
   width: 50px;
-}
-
-.icontext {
-  text-decoration: none;
-  text-align: center;
-  color: white;
 }
 
 ul {
@@ -129,10 +124,10 @@ textarea {
 }
 
 .main_profile_page {
-  min-height: 100%;
   display: flex;
-  margin-top: 1em;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 3em;
+  gap: 5em;
   flex-direction: row;
 }
 
@@ -146,7 +141,7 @@ textarea {
   align-self: center;
 
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5rem
 }
 
 .profilePage {
