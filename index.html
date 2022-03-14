@@ -23,8 +23,9 @@
           quaerat excepturi culpa dignissimos.
         </p>
         <form>
-          <input class="button" type="button" value=" SHOW ANSWER" />
+          <input class="btn-toggle" onclick="toggleAnswer('answerOne')"  type="button" value="SHOW ANSWER"/>
         </form>
+        <p class="hide" id="answerOne">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, laboriosam tempora accusantium aliquam, repellendus sint error autem quibusdam, reiciendis exercitationem numquam dolor officia! Aspernatur sit asperiores quas officiis non sed.</p>
         <ul class="tags">
           <li>HTML</li>
           <li>CSS</li>
@@ -42,8 +43,10 @@
           aliquam, maxime voluptatum ea!
         </p>
         <form>
-          <input class="button" type="button" value=" SHOW ANSWER" />
+          <input class="btn-toggle" onclick="toggleAnswer('answerTwo')" type="button" value="SHOW ANSWER"/>
+        
         </form>
+        <p class="hide" id="answerTwo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, laboriosam tempora accusantium aliquam, repellendus sint error autem quibusdam, reiciendis exercitationem numquam dolor officia! Aspernatur sit asperiores quas officiis non sed.</p>
         <ul class="tags">
           <li>HTML</li>
           <li>CSS</li>
@@ -61,8 +64,9 @@
           necessitatibus! Et!
         </p>
         <form>
-          <input class="button" type="button" value="SHOW ANSWER" />
+          <input class="btn-toggle" type="button" onclick="toggleAnswer('answerThree')" value="SHOW ANSWER"/>
         </form>
+        <p class="hide" id="answerThree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, laboriosam tempora accusantium aliquam, repellendus sint error autem quibusdam, reiciendis exercitationem numquam dolor officia! Aspernatur sit asperiores quas officiis non sed.</p>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -71,13 +75,13 @@
         </ul>
       </section>
     </div>
-    <footer>
+      <nav>
       <a  href="index.html" ><img class="images" src="/Images/home_Home_active.png" alt="Home-Button" /></a>
       <a  href="bookmark.html"><img class="images" src="/Images/bookmark_Bookmark_resize.png" /></a>
       <a  href="newquestion.html"><img class="images" src="/Images/plus_Plus_resize.png" alt="plus button"/></a>
       <a  href="profile.html"><img class="images"src="/Images/profile_Name_resize.png" alt="profile button"/>
-      
-    </footer>
+      </nav>
   </main>
+  <script src="data.js"></script>
   </body>
 </html>

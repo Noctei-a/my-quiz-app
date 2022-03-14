@@ -58,7 +58,7 @@ form {
   height: 35px;
 }
 
-footer {
+nav {
   display: flex;
   position: fixed;
   width: 100%;
@@ -96,7 +96,7 @@ li {
   border-radius: 6px;
 }
 
-.button {
+.btn-toggle {
   background-color: rgb(41, 7, 7);
   padding: 1em;
   box-shadow: 1px 1px 2px rgb(255, 255, 255);
@@ -115,6 +115,7 @@ li {
 
 textarea {
   display: block;
+  resize: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -141,7 +142,7 @@ textarea {
   align-self: center;
 
   color: white;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
 .profilePage {
@@ -161,7 +162,14 @@ textarea {
   margin: 2em;
 }
 
-#profileTags {
+.profileTags {
   background-color: #ffffff;
   color: black;
+}
+
+.hide {
+  display: none;
+  margin: 4em 1.5em;
+  color: white;
+  text-align: center;
 }
