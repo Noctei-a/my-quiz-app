@@ -5,7 +5,7 @@ html {
 
 body {
   min-height: 100vh;
-  margin: 0em auto 0em auto;
+  margin: 0em auto;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(41, 7, 7);
   border: black 1px solid;
@@ -97,7 +97,6 @@ li {
 }
 
 .btn-toggle {
-  background-color: rgb(41, 7, 7);
   padding: 1em;
   box-shadow: 1px 1px 2px rgb(255, 255, 255);
   border-radius: 6px;
@@ -141,7 +140,7 @@ textarea {
   display: flex;
   align-self: center;
 
-  color: white;
+  color:white;
   font-size: 1.5rem;
 }
 
