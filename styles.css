@@ -6,7 +6,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0em auto 0em auto;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color: rgb(41, 7, 7);
   border: black 1px solid;
 }
@@ -20,7 +20,7 @@ body {
 .header_title {
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
@@ -64,7 +64,7 @@ nav {
   width: 100%;
   bottom: 0px;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: larger;
   background-color: #591414;
   justify-content: space-around;
@@ -149,7 +149,7 @@ textarea {
   color: white;
   font-size: 1.5em;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .profilePage_text {
