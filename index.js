@@ -2,7 +2,7 @@
 import { manageBookmarkButton } from './scripts/bookmark.js';
 import { manageProfileButton } from './scripts/profile.js';
 import { manageCreateButton } from './scripts/create.js';*/
-
+/* 
 const home = document.querySelector('[data-js="home"]');
 const bookmark = document.querySelector('[data-js="bookmark"]');
 const create = document.querySelector('[data-js="newQuestion"]');
@@ -95,12 +95,26 @@ profileButton.addEventListener('click', function () {
   bookmark.classList.add('hidden');
   create.classList.add('hidden');
   profile.classList.remove('hidden');
-});
+}); */
 
 /*homeButton.addEventListener('click', manageHomeButton());
 profileButton.addEventListener('click', manageProfileButton());
 bookmarkButton.addEventListener('click', manageBookmarkButton());
 createButton.addEventListener('click', manageCreateButton());*/
+
+
+let navBar = document.querySelectorAll("nav > a");
+let pages = document.querySelectorAll("main");
+
+navBar.forEach(button => {
+  button.addEventListener('click', function() {
+    let imgPath = button.firstChild.src;
+    console.log(imgPath.replace("resize", "active"));
+    button.firstChild.src = imgPath.replace("resize", "active");
+  })
+  
+  console.log(button);
+});
 
 function toggleAnswer(elementId) {
   let pToToggle = document.getElementById(elementId);
