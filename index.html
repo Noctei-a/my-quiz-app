@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Main Page</title>
+    <script src="/index.js" defer></script>
+    <title>Quiz-App</title>
   </head>
   <body>
+    <!-- Home -->
+
     <main data-js="home">
       <header class="header">
         <h1 class="header_title">QUIZ - APP</h1>
@@ -116,35 +119,131 @@
           </ul>
         </section>
       </div>
-      <footer>
-        <nav>
-          <a href="index.html"
-            ><img
-              class="images"
-              src="/Images/home_Home_active.png"
-              alt="Home-Button"
-          /></a>
-          <a href="bookmark.html"
-            ><img
-              class="images"
-              src="/Images/bookmark_Bookmark_resize.png"
-              alt="bookmark image"
-          /></a>
-          <a href="newquestion.html"
-            ><img
-              class="images"
-              src="/Images/plus_Plus_resize.png"
-              alt="plus button"
-          /></a>
-          <a href="profile.html"
-            ><img
-              class="images"
-              src="/Images/profile_Name_resize.png"
-              alt="profile button"
-          /></a>
-        </nav>
-      </footer>
     </main>
-    <script src="data.js"></script>
+
+    <!-- BOOKMARK -->
+    <main class="hidden" data-js="bookmark">
+      <header class="header">
+        <h1 class="header_title">BOOKMARK`S</h1>
+      </header>
+      <div class="main_page"></div>
+    </main>
+    <!-- New QUESTION -->
+    <main class="hidden" data-js="newQuestion">
+      <header class="header">
+        <h1 class="header_title">CREATE</h1>
+      </header>
+      <div class="main_page">
+        <section class="card">
+          <h2>New Question</h2>
+          <textarea rows="8" cols="35"></textarea>
+          <h2>Answer</h2>
+          <textarea rows="8" cols="35"></textarea>
+          <h2>Tags</h2>
+          <textarea cols="35"></textarea>
+          <form>
+            <input
+              class="btn-toggle"
+              id="newquestion"
+              type="submit"
+              value="Send"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
+    <!-- PROFILE -->
+    <main class="hidden" data-js="profile">
+      <header class="header">
+        <h1 class="header_title">PROFILE</h1>
+      </header>
+      <div class="main_profile_page">
+        <img class="profile_image" src="/assets/dog.jpg" alt="dog image" />
+        <p class="name">Dennis Koch</p>
+      </div>
+      <div class="profilePage_text"></div>
+      <p class="profilePage">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum rerum
+        ad magnam assumenda suscipit omnis voluptas maxime. Libero sed, neque
+        quisquam cupiditate, veritatis, quam incidunt fuga sint repellendus
+        voluptatum quasi!Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Dolorum rerum ad magnam assumenda suscipit omnis voluptas maxime.
+        Libero sed, neque quisquam cupiditate, veritatis, quam incidunt fuga
+        sint repellendus voluptatum quasi!
+      </p>
+      <ul>
+        <li class="profileTags">HTML</li>
+        <li class="profileTags">CSS</li>
+        <li class="profileTags">JS</li>
+        <li class="profileTags">REACT</li>
+      </ul>
+      <p class="profilePage">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum rerum
+        ad magnam assumenda suscipit omnis voluptas maxime. Libero sed, neque
+        quisquam cupiditate, veritatis, quam incidunt fuga sint repellendus
+        voluptatum quasi!
+      </p>
+      <form>
+        <input
+          id="profilePageButton"
+          class="btn-toggle"
+          type="button"
+          value="LOGOUT"
+        />
+      </form>
+    </main>
+    <!-- NAVIGATION -->
+    <footer>
+      <nav>
+        <a class="hidden" href="#" data-js="home-button"
+          ><img
+            class="images"
+            src="/Images/home_Home_resize.png"
+            alt="Home-Button"
+        /></a>
+        <a href="#" data-js="home-button--active"
+          ><img
+            class="images"
+            src="/Images/home_Home_active.png"
+            alt="Home-Button"
+        /></a>
+        <a href="#" data-js="bookmark-button"
+          ><img
+            class="images"
+            src="/Images/bookmark_Bookmark_resize.png"
+            alt="bookmark image"
+        /></a>
+        <a class="hidden" href="#" data-js="bookmark-button--active"
+          ><img
+            class="images"
+            src="/Images/bookmark_Bookmark_active.png"
+            alt="bookmark image"
+        /></a>
+        <a href="#" data-js="create-button"
+          ><img
+            class="images"
+            src="/Images/plus_Plus_resize.png"
+            alt="plus button"
+        /></a>
+        <a class="hidden" href="#" data-js="create-button--active"
+          ><img
+            class="images"
+            src="/Images/plus_Plus_active.png"
+            alt="plus button"
+        /></a>
+        <a href="#" data-js="profile-button"
+          ><img
+            class="images"
+            src="/Images/profile_Name_resize.png"
+            alt="profile button"
+        /></a>
+        <a class="hidden" href="#" data-js="profile-button--active"
+          ><img
+            class="images"
+            src="/Images/profile_Name_active.png"
+            alt="profile button"
+        /></a>
+      </nav>
+    </footer>
   </body>
 </html>
